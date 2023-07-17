@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Evan You</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,500,700"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+        font-size: calc(10px + 0.33vw);
+        -webkit-font-smoothing: antialiased;
+        padding: 5vh 10vw;
+        color: #121314;
+      }
+      h1 {
+        font-size: 4.5em;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+        max-width: 28em;
+      }
+      a {
+        text-decoration: none;
+        white-space: nowrap;
+        color: #121314;
+        position: relative;
+      }
+      a:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 66%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+        background-color: rgba(79, 192, 141, 0.5);
+      }
+      a:hover:after {
+        top: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello.</h1>
+    <p style="font-weight: 500; font-size: 2.2em">我是乔不思</p>
+    <p>
+      I am an independent software developer currently based in Singapore. I am
+      the creator of the JavaScript framework
+      <a href="https://vuejs.org" target="_blank">Vue.js</a> and the frontend
+      build tool <a href="https://vitejs.dev/" target="_blank">Vite</a>. Most of
+      my work is open source and publicly available on
+      <a href="https://github.com/yyx990803" target="_blank">GitHub</a>. If you
+      happen to benefit from my OSS work, you can support me financially via
+      <a href="https://github.com/sponsors/yyx990803" target="_blank"
+        >GitHub Sponsors</a
+      >.
+    </p>
+    <p>
+      You can follow me on
+      <a href="https://twitter.com/youyuxi" target="_blank">Twitter</a>
+      where I mostly tweet about Vue and frontend technologies. If you happen to
+      speak Chinese, my Chinese name is 尤雨溪 (yóu yǔ xī) and I have a
+      Chinese-only
+      <a href="https://twitter.com/yuxiyou" target="_blank">Twitter alt</a> for
+      non-tech-focused musings. You can also find me on
+      <a href="https://www.weibo.com/arttechdesign" target="_blank">微博</a> and
+      <a href="https://www.zhihu.com/people/evanyou/activities" target="_blank"
+        >知乎</a
+      >.
+    </p>
+    <p>
+      Outside of programming and helping my wife take care of our two kids, I
+      enjoy video games, karaoke, sushi, watching UFC/F1, and collecting
+      mechanical watches.
+    </p>
+  </body>
+</html>
