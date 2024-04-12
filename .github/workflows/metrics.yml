@@ -17,5 +17,13 @@ jobs:
         with:
           filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, repositories
-          plugin_lines: yes
+          user: pwxiao
+          template: classic
+          
+          base: ""
+          config_timezone: Asia/Shanghai
+          plugin_followup: yes
+          plugin_followup_sections: user
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_limit: 6
