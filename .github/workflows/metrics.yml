@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Example
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master
         with:
           filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
