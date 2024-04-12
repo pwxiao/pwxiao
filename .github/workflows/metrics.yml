@@ -12,64 +12,10 @@ jobs:
   metrics-left:
     runs-on: ubuntu-latest
     steps:
-      - name: left
+      - name: Example
         uses: lowlighter/metrics@latest
         with:
-          # Your GitHub token
+          filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics.left.svg
-
-          # Options
-          user: pwxiao
-          template: classic
-          base: ""
-          config_timezone: Asia/Shanghai
-          plugin_followup: yes
-          plugin_followup_sections: user
-          plugin_languages: yes
-          plugin_languages_colors: github
-          plugin_languages_limit: 6
-#           plugin_languages_recent_days: 14
-#           plugin_languages_recent_load: 300
-#           plugin_languages_threshold: 13%
-#           plugin_languages_other: true
-          plugin_languages_ignored: html, css, 4D, q
-          plugin_languages_details: bytes-size, percentage
-#           plugin_languages_sections: most-used
-#           plugin_languages_indepth: yes
-          plugin_languages_aliases: Jupyter Notebook:ipynb
-#           commits_authoring: 975062472@qq.com, tony031218@qq.com, tonycrane@foxmail.com, crane@manim.org.cn, tonycrane@zju.edu.cn, TonyCrane, Tony031218, 鹤翔万里
-          plugin_starlists: yes
-          plugin_starlists_languages: yes
-          plugin_starlists_limit_languages: 6
-          plugin_starlists_languages_ignored: html
-          plugin_starlists_languages_aliases: Jupyter Notebook:ipynb
-          plugin_starlists_limit_repositories: 0
-          # plugin_starlists_only: Learning
-          # plugin_rss: yes
-          # plugin_rss_source: https://blog.tonycrane.cc/atom.xml
-          # plugin_rss_limit: 3
-          # config_order: followup, languages, starlists, rss
-
-  # metrics-right:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: right
-  #       uses: lowlighter/metrics@master
-  #       with:
-  #         token: ${{ secrets.METRICS_TOKEN }}
-  #         filename: metrics.right.svg
-
-  #         # Options
-  #         user: pwxiao
-  #         template: classic
-  #         base: ""
-  #         config_timezone: Asia/Shanghai
-  #         plugin_topics: yes
-  #         plugin_topics_limit: 0
-  #         plugin_topics_mode: icons
-  #         plugin_achievements: yes
-  #         plugin_achievements_secrets: yes
-  #         plugin_achievements_threshold: B
-  #         plugin_achievements_ignored: member, worker, explorer, automator, infographile
-  #         config_order: topics, achievements
+          base: header, repositories
+          plugin_lines: yes
