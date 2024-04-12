@@ -46,30 +46,30 @@ jobs:
           plugin_starlists_languages_aliases: Jupyter Notebook:ipynb
           plugin_starlists_limit_repositories: 0
           # plugin_starlists_only: Learning
-          plugin_rss: yes
-          plugin_rss_source: https://blog.tonycrane.cc/atom.xml
-          plugin_rss_limit: 3
-          config_order: followup, languages, starlists, rss
+          # plugin_rss: yes
+          # plugin_rss_source: https://blog.tonycrane.cc/atom.xml
+          # plugin_rss_limit: 3
+          # config_order: followup, languages, starlists, rss
 
-  metrics-right:
-    runs-on: ubuntu-latest
-    steps:
-      - name: right
-        uses: lowlighter/metrics@master
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics.right.svg
+  # metrics-right:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: right
+  #       uses: lowlighter/metrics@master
+  #       with:
+  #         token: ${{ secrets.METRICS_TOKEN }}
+  #         filename: metrics.right.svg
 
-          # Options
-          user: pwxiao
-          template: classic
-          base: ""
-          config_timezone: Asia/Shanghai
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: icons
-          plugin_achievements: yes
-          plugin_achievements_secrets: yes
-          plugin_achievements_threshold: B
-          plugin_achievements_ignored: member, worker, explorer, automator, infographile
-          config_order: topics, achievements
+  #         # Options
+  #         user: pwxiao
+  #         template: classic
+  #         base: ""
+  #         config_timezone: Asia/Shanghai
+  #         plugin_topics: yes
+  #         plugin_topics_limit: 0
+  #         plugin_topics_mode: icons
+  #         plugin_achievements: yes
+  #         plugin_achievements_secrets: yes
+  #         plugin_achievements_threshold: B
+  #         plugin_achievements_ignored: member, worker, explorer, automator, infographile
+  #         config_order: topics, achievements
