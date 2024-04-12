@@ -7,4 +7,6 @@
     <a href="https://t.me/TonyCraneSky">https://www.zhihu.com/people/mark-24-11</a> ∙
   </samp>
 </p>
-![](github-metrics.svg)
+  <a href="https://github.com/pwxiao">
+    <img width="400" align="top" src="https://github.com/pwxiao/pwxiao/blob/main/github-metrics.svg" />
+  </a>
